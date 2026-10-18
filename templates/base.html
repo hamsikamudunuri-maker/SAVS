@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SAVS - Students Against Vaping & Smoking</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='SAVS Favicon.png') }}">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
 </head>
@@ -13,7 +14,16 @@
     <header class="site-header">
         <nav class="navbar">
             <a href="{{ url_for('index') }}" class="logo-link"><img class="logo" src="{{ url_for('static', filename='images/SAVS Full Logo.png') }}" alt="SAVS - Students Against Vaping and Smoking"></a>
-            <a href="{{ url_for('about')}}">About</a>
+
+            <div class="nav-links">
+                <a href="{{ url_for('about') }}" class="{% if request.endpoint == 'about' %}active{% endif %}">About</a>
+
+                <a href="{{ url_for('updates') }}" class="{% if request.endpoint == 'updates' %}active{% endif %}">Updates</a>
+
+                <a href="{{ url_for('schools') }}" class="{% if request.endpoint == 'schools' %}active{% endif %}">Information For Schools</a>
+
+                <a href="{{ url_for('join') }}" class="{% if request.endpoint == 'join' %}active{% endif %}">Join The Movement</a>
+            </div>
         </nav>
     </header>
 

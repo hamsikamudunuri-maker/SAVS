@@ -1,0 +1,190 @@
+
+/* ---------- Homepage introduction ---------- */
+
+.sections {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 60px;
+}
+
+/* ---------- Main heading ---------- */
+
+.sections h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222222;
+
+    margin-top: 10px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+
+    border-bottom: 3px solid #f28c28;
+    width: fit-content;
+}
+
+/* ---------- Introduction text ---------- */
+
+.body-text {
+    max-width: 900px;
+}
+
+.body-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #333333;
+
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+
+
+
+/* ---------- Join the movement page ---------- */
+
+.join-section {
+    max-width: 1000px;
+    margin: 25px auto 45px;
+    padding: 40px 55px;
+
+    text-align: center;
+    background-color: #f7f5f2;
+    border: 1px solid #e6ded5;
+    border-top: 5px solid #f28c28;
+    border-radius: 18px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+}
+
+.join-section h2 {
+    font-size: 30px;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+.join-section > p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+/* ---------- Supporters and members ---------- */
+
+.supporters-section,
+.members-section {
+    padding: 25px 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    background-color: #ffffff;
+    border: 1px solid #eee5dc;
+    border-radius: 14px;
+}
+
+.join-section h3 {
+    font-size: 23px;
+    color: #292929;
+    margin-bottom: 12px;
+}
+
+.supporters-section p,
+.members-section p {
+    max-width: 750px;
+    margin: 0 auto 22px;
+
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+/* ---------- Join buttons ---------- */
+
+.join-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-bottom: 5px;
+
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.supporter-button {
+    background-color: #f28c28;
+    color: #ffffff;
+}
+
+.supporter-button:hover {
+    background-color: #d97012;
+    transform: translateY(-2px);
+}
+
+.member-button {
+    background-color: #ffe0bd;
+    color: #8a4000;
+}
+
+.member-button:hover {
+    background-color: #ffd3a3;
+    transform: translateY(-2px);
+}
+
+.join-button:focus-visible {
+    outline: 3px solid #f28c28;
+    outline-offset: 3px;
+}
+
+/* ---------- Members school selection ---------- */
+
+.school-form {
+    margin-top: 25px;
+}
+
+.school-form label {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.school-form-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.school-form select {
+    width: 280px;
+    padding: 12px 14px;
+
+    font-family: inherit;
+    font-size: 15px;
+    color: #292929;
+
+    background-color: #ffffff;
+    border: 1px solid #d5c9bc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.school-form select:focus-visible {
+    outline: 3px solid #f28c28;
+    outline-offset: 2px;
+}
+
+.school-form .join-button {
+    margin-bottom: 0;
+}

@@ -1,0 +1,32 @@
+
+/* ---------- Homepage introduction layout ---------- */
+
+.layout {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* ---------- Introduction text ---------- */
+
+.intro-text {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ---------- SAVS logo ---------- */
+
+.home-image-container {
+    flex: 0 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+}

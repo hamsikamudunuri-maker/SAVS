@@ -1,0 +1,38 @@
+{% extends "base.html" %} 
+
+{% block title %}SAVS | Join Us{% endblock %}
+
+{% block content %}
+    <section>
+        <div class="join-section">
+            <h2>Want to Join Us?</h2>
+
+            <p>
+                Be part of the movement! Help us create a healthier future for young people across New Zealand.
+            </p>
+            
+            <div class="supporters-section">
+                <h3>Supporters</h3>
+                <p>This form is for all adults. It's also for youth who cannot commit to SAVS activities/meetings or don't want to be part of a specific school branch, and/or whose school does not have a dedicated SAVS School Branch yet.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-1pp8cXjgMiDGm5GZPs8a1JGV620xMN-Nb6xZA-4tPSD9kg/viewform" class="join-button supporter-button">Become a Supporter</a>
+            </div>
+
+            <div class="memebers-section">
+                <h3>Members</h3>
+                <p>For students who are part of a school that has a dedicated SAVS School Branch, find your school in the dropdown below, then click Submit. This will take you to a personalised form for your specific school.</p>
+                <form class="school-form" action="{{ url_for('join') }}" method="GET">
+                    <label for="school">Select your school:</label>
+
+                    <div class="school-form-controls">
+                        <select id="school" name="school" required>
+                            <option value="" disabled selected>Choose your school</option>
+                            <option value="OSC">Ormiston Senior College</option>
+                        </select>
+
+                        <button type="submit" class="join-button member-button">Submit</button>
+                    </div>
+                </form>            
+            </div>
+        </div>
+    </section>
+{% endblock %}

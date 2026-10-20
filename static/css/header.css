@@ -42,7 +42,7 @@ body {
 
 .navbar {
     width: 100%;
-    min-height: 100px;
+    min-height: 75px;
     padding: 10px 0;
 
     display: flex;
